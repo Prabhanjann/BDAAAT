@@ -1,0 +1,3 @@
+Healthcare data often contains missing values due to device failures and irregular sampling. To address this, the feature engineering process incorporates several strategies.
+For time-dependent data, forward filling is applied, where the most recent observed value is carried forward to fill short gaps, preserving temporal continuity. For longer missing segments or non-sequential data, statistical imputation (e.g., mean or median) is used to provide stable approximations.
+Additionally, missingness indicators are introduced to capture whether a value was originally absent, allowing the model to learn from patterns of missing data. Irregularly sampled observations are aligned into consistent time windows to ensure uniform representation.
